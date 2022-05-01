@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IfwNoLcMEey4uItWe2DLPA" name="src">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_IgqzoLcMEey4uItWe2DLPA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PNAv0LcMEey4uItWe2DLPA" name="personajes">
+    <generalization xmi:type="uml:Generalization" xmi:id="_-owocLcNEey4uItWe2DLPA" general="_y34bYLcNEey4uItWe2DLPA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sNVMLcMEey4uItWe2DLPA" name="CoordX" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sOjULcMEey4uItWe2DLPA" name="CoordY" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NVuBkLcNEey4uItWe2DLPA" name="objetos móviles" type="_a7CdMLcMEey4uItWe2DLPA" association="_NVk3oLcNEey4uItWe2DLPA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NVuooLcNEey4uItWe2DLPA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NVvPsLcNEey4uItWe2DLPA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Q35kULcMEey4uItWe2DLPA" name="enemigos">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9ogFULcNEey4uItWe2DLPA" general="_y34bYLcNEey4uItWe2DLPA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_08JOoLcMEey4uItWe2DLPA" name="CoordX" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_08MR8LcMEey4uItWe2DLPA" name="CoordY" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZD7xoLcMEey4uItWe2DLPA" name="objetos móviles">
+    <generalization xmi:type="uml:Generalization" xmi:id="_TGh64LmEEey24KaDO95eJg" general="_GZK3cLmEEey24KaDO95eJg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_a7CdMLcMEey4uItWe2DLPA" name="objetos inmóviles">
+    <generalization xmi:type="uml:Generalization" xmi:id="_WnUhELmEEey24KaDO95eJg" general="_GZK3cLmEEey24KaDO95eJg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NVk3oLcNEey4uItWe2DLPA" visibility="package" memberEnd="_NVuBkLcNEey4uItWe2DLPA _NVv2wLcNEey4uItWe2DLPA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NVrlULcNEey4uItWe2DLPA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NVsMYLcNEey4uItWe2DLPA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NVv2wLcNEey4uItWe2DLPA" name="personajes" type="_PNAv0LcMEey4uItWe2DLPA" association="_NVk3oLcNEey4uItWe2DLPA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TVhn4LcNEey4uItWe2DLPA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TWeDELcNEey4uItWe2DLPA" value="3"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_y34bYLcNEey4uItWe2DLPA" name="Humanoide">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2CUXELcNEey4uItWe2DLPA" name="NivelEnerg" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2CU-ILcNEey4uItWe2DLPA" name="NumVidas" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2CVlMLcNEey4uItWe2DLPA" name="CapOfens" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mC_aULmDEey24KaDO95eJg" name="Armas">
+    <generalization xmi:type="uml:Generalization" xmi:id="_RWDbwLmEEey24KaDO95eJg" general="_ZD7xoLcMEey4uItWe2DLPA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_t05QYLmDEey24KaDO95eJg" name="nivelEnergia"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ynKFgLmDEey24KaDO95eJg" name="potenciador"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GZK3cLmEEey24KaDO95eJg" name="Objeto">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_H3--0LmEEey24KaDO95eJg" name="CoordX" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_H4A0ALmEEey24KaDO95eJg" name="CoordY" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_g4cPwLcMEey4uItWe2DLPA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g4esALcMEey4uItWe2DLPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
